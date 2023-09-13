@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet">
-    <title>Box Model Flex</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Box Model Grid</title>
 </head>
+
 <body>
-  <div class="max-w-3x1 bg-green-600 mx-auto container">
-    <header class="h-10 p-2 bg-red-300">
+  <div class="grid grid-cols-4 max-w-3x1 bg-green-600 mx-auto container">
+    <header class=" col-span-4 h-10 p-2 bg-red-300">
       este es mi header
     </header>
-    <section class="flex bg-purple-400">
-      <nav class="bg-blue-400 w-1/4">
-        menu
-      </nav>
-      <article class="bg-orange-400 w-3/4">
-        contenido de la seccion
-      </article>
-    </section>
-    <footer>
+    <nav class="bg-blue-400 h h-32">
+      menu
+    </nav>
+    <article class="bg-orange-400 col-span-3">
+      contenido de la seccion
+    </article>
+    <footer class="bg-red-500 col-span-4">
       pie de pagina
     </footer>
   </div>
 </body>
+
 </html>
-    
-    
